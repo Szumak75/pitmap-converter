@@ -190,6 +190,7 @@ class Converter(BData):
             session.close()
             self.__count += 1
             csv_line[0] = f"AD{self.__count:04}"
+            csv_line[2] = ""
 
         return ",".join(csv_line)
 
