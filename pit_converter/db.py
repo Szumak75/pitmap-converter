@@ -77,7 +77,7 @@ class TPoints(LocalBase):
 
     @hybrid_property
     def point_name(self) -> str:
-        return f"PE{self.id:04}"
+        return f"P{self.id:04}"
 
 
 class TWLines(LocalBase):
@@ -113,7 +113,7 @@ class TServices(LocalBase):
 
     @hybrid_property
     def service_name(self) -> str:
-        return f"AD{self.id:04}"
+        return f"PA{self.id:04}"
 
 
 class Database(BData):
